@@ -30,7 +30,7 @@ export default {
       name: "",
       password: "",
       repeat: ""
-    };
+    }
   },
   methods: {
     login() {
@@ -38,11 +38,11 @@ export default {
         localStorage.getItem("name") === this.name &&
         localStorage.getItem("password") === this.password
       ) {
-        this.name = ''
-        this.password = ''
+        this.name = ""
+        this.password = ""
         this.$router.push("/home/list")
       } else {
-          alert('用户名密码不正确')
+        alert("用户名密码不正确")
       }
     },
     reg() {
@@ -64,9 +64,7 @@ export default {
       this.isReg = false
     }
   }
-};
+}
 </script>
 
-<style lang="stylus" scoped>
-
-</style>
+<style lang="stylus" scoped></style>
